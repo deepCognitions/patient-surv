@@ -1,6 +1,4 @@
-from argparse import FileType
-from heapq import heappop
-from shutil import move
+
 import streamlit as st
 import shap
 import pickle
@@ -9,7 +7,6 @@ import pandas as pd
 import numpy as np
 import base64
 import joblib
-import math
 import streamlit.components.v1 as components
 from predict import get_prediction, explain_model_prediction
 from PIL import Image
