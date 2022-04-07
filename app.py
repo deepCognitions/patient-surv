@@ -15,8 +15,6 @@ from predict import get_prediction, explain_model_prediction
 from PIL import Image
 import matplotlib.pyplot as plt
 
-img_bg = Image.open('Img/bg.png')
-
 from keras.models import load_model
 nn = load_model('Model/DL_PSP.h5')
 
