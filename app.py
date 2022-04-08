@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import shap
+import tensorflow
 import base64
 import streamlit.components.v1 as components
 from predict import get_prediction, explain_model_prediction
