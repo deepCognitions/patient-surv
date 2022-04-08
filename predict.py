@@ -1,11 +1,13 @@
 import joblib
 import shap
+import pandas as pd
 
 with open('Model/sscalerf.pkl', 'rb') as f:
     scaler = joblib.load(f)
 
-with open('Data/ex_data.pkl', 'rb') as g:
-    ex_data = joblib.load(g)
+#with open('Data/ex_data.pkl', 'rb') as g:
+    #ex_data = joblib.load(g)
+ex_data = pd.read_pickle('Data/ex_data.pkl')
 
 
 
