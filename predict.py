@@ -1,8 +1,5 @@
 import joblib
-import numpy as np
-import pandas as pd
 import shap
-import tensorflow
 
 with open('Model/sscalerf.pkl', 'rb') as f:
     scaler = joblib.load(f)

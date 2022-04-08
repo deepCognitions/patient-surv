@@ -1,15 +1,10 @@
 import streamlit as st
 import pickle
-import tensorflow
 import pandas as pd
-import numpy as np
 import shap
 import base64
-import joblib
 import streamlit.components.v1 as components
 from predict import get_prediction, explain_model_prediction
-from PIL import Image
-import matplotlib.pyplot as plt
 
 from keras.models import load_model
 nn = load_model('Model/DL_PSP.h5')
@@ -18,7 +13,6 @@ open_file = open("Data/featuresf", "rb")
 features = pickle.load(open_file)
 open_file.close()
 
-#shap.initjs()      
 
 def st_shap(plot, height=None):
     shap_html = f"<head>{shap.getjs()}</head><body>{plot.html()}</body>"
@@ -120,7 +114,7 @@ def main():
 
         st.markdown("""<style> .big-font { font-family:sans-serif; color: #1D7AA7 ; font-size: 30px; } </style> """, unsafe_allow_html=True)
         st.markdown(f'<p class="big-font">{pred} chances of survival is predicted for the patient.</p>', unsafe_allow_html=True)
-        #st.write(f" => {pred} is predicted. <=")
+     
 
         p, shap_values = explain_model_prediction(X,nn,features)
         
