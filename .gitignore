@@ -1,2 +1,5 @@
 *.csv
 *.zip
+*.md
+ord_encoderf.pkl
+Dl_psp_raw.ipynb
