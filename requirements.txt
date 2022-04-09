@@ -4,4 +4,3 @@ pandas==1.4.1
 shap==0.40.0
 streamlit==1.7.0
 tensorflow-cpu==2.8.0
-click==8
