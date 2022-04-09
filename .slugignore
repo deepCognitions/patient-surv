@@ -4,6 +4,6 @@ Model/nne.h5
 *.md
 Model/ord_encoderf.pkl
 Notebook/*.ipynb
-*.txt
+Data/*.pkl
 
 
