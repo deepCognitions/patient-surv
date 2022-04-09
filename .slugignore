@@ -5,8 +5,6 @@ Model/nne.h5
 Model/ord_encoderf.pkl
 Notebook/*.ipynb
 Data/*.pkl
-*.toml
 *.txt
-*.json
-*.xml
+
 
