@@ -1,5 +1,6 @@
 *.csv
-*.zip
+Model/*.zip
+Model/nne.h5
 *.md
-ord_encoderf.pkl
-Dl_psp_raw.ipynb
+
+
