@@ -65,7 +65,7 @@ def main():
         f"""
         <div class="container">
             <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open('Img/bg2.png', "rb").read()).decode()}">
-            <p class="logo-text">Site's CO2 Emission Evaluation</p>
+            <p class="logo-text">Patient Survival Prediction</p>
             
         </div>
         """,
